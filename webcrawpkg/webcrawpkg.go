@@ -24,7 +24,6 @@ func NewWebSpider() *WebSpider {
 }
 
 func (t *WebSpider) Identifier() {}
-func (t *WebSpider) StartTask() {}
 func (t *WebSpider) ScrapData() {}
 func (t *WebSpider) PraseData() {}
 func (t *WebSpider) WriteInDB() {}
