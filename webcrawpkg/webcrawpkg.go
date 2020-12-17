@@ -11,7 +11,13 @@ var l = log.New(os.Stderr, "mypkg", 0)
 
 var T = new(WebSpider)
 
-type WebSpider struct{}
+type WebSpider struct{
+	name	string
+	url 	string
+	period  Int
+	whenToStartHour int
+	whenTostartMinute int
+}
 
 func init() {
 	go func() {
